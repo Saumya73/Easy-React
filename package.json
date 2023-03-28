@@ -1,0 +1,26 @@
+{
+  "name": "easyreact",
+  "version": "1.0.0",
+  "description": "Learning React",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saumya73/Easy-React.git"
+  },
+  "keywords": [
+    "Namaste",
+    "React"
+  ],
+  "author": "Saumya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saumya73/Easy-React/issues"
+  },
+  "homepage": "https://github.com/Saumya73/Easy-React#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
