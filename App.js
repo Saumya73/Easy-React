@@ -1,49 +1,66 @@
 import React from 'react';
 import  ReactDOM  from 'react-dom/client';
 
-const heading = React.createElement("h1", 
-{
-    id:"heading"
-}, "Namastee React using React Create Element");
+/**
+ * Header 
+ *    logo
+ *    navbar
+ * BODY
+ *    search
+ *    resraurant container
+ *    restaurant card
+ * FOOTER
+ *    Copyrights
+ *    link
+ *    address  
+ *    contact
+ * 
+ *    
+ */  
 
-// console.log(heading);
+const Header = () => {
+    return(
+     <div className='header'>
+      <div className='logo'>
+        <img src='https://static.vecteezy.com/system/resources/thumbnails/002/285/940/small_2x/green-heeathy-food-with-spoon-fork-logo-free-vector.jpg'/>
+      </div>
+      <div className='nav-links'>
+      <ul>
+      <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Cart</li>
+      </ul>
 
-const jsxHeading = <h1 id='jsxheading'>Namaste React using JSX</h1>;    //react element
-
-// console.log(jsxHeading);
-
-
-
-//React Functional Component
-
-const HeadingComponent1 = () => {
-    return <h2>Namste Functional Component 1</h2>;
+      </div>
+     </div>
+    );
 };
 
-const number = 100;
+// const Body = () => {
+//     return(
+//         <div className='body'>
+//         <div className='search'>Search</div>
+//         <div className='restro-container'>
 
-//Component composition - passing component inside component
+//         </div>
 
-//React Fragment
-const HeadingComponent2 = () => (
-    <>
-    <div>
-    <HeadingComponent1/>                                                   
-    {heading}
-    <h2>{number}</h2>
-    {number}
-  <h4>  {2+5+1+1+9+9+8} </h4>
-  <h5>{console.log("ggddd")}</h5>
-     <h2>Namste Functional Component 2</h2>    
-     </div>   
-     
-     <div>
-     <h2>{number}</h2>
-    <HeadingComponent1/>                                                    
-     </div> 
-     </>  
-);
+//         </div>
+//     )
+// }
+
+const AppLayout = () => {
+    return(
+        <div className="app">
+          <Header/>
+        {/* <Body/> */}
+        </div>
+    )
+}
+
+
+  
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent2/>);
+root.render(<AppLayout/>);
