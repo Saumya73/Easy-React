@@ -24,7 +24,9 @@ const number = 100;
 
 //Component composition - passing component inside component
 
+//React Fragment
 const HeadingComponent2 = () => (
+    <>
     <div>
     <HeadingComponent1/>                                                   
     {heading}
@@ -33,7 +35,13 @@ const HeadingComponent2 = () => (
   <h4>  {2+5+1+1+9+9+8} </h4>
   <h5>{console.log("ggddd")}</h5>
      <h2>Namste Functional Component 2</h2>    
-     </div>                          
+     </div>   
+     
+     <div>
+     <h2>{number}</h2>
+    <HeadingComponent1/>                                                    
+     </div> 
+     </>  
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
