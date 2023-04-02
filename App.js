@@ -9,6 +9,8 @@ import  ReactDOM  from 'react-dom/client';
  *    search
  *    resraurant container
  *    restaurant card
+ *         -img
+ *         - restro name, star rating, cuisine , delivery time
  * FOOTER
  *    Copyrights
  *    link
@@ -37,23 +39,36 @@ const Header = () => {
     );
 };
 
-// const Body = () => {
-//     return(
-//         <div className='body'>
-//         <div className='search'>Search</div>
-//         <div className='restro-container'>
+const stylecard = {
+    backgroundColor: "yellow"
+}
 
-//         </div>
+const RestaurantCard = () => {
+    return(
+      <div className='restro-card' style={stylecard}>
+         <h3>Restro Name</h3>
+      </div>
+    )
+}
 
-//         </div>
-//     )
-// }
+const Body = () => {
+    return(
+        <div className='body'>
+        <div className='search'>Search</div>
+        <div className='restro-container'>
+         {/* //RestaurantCard */}
+         <RestaurantCard/>
+        </div>
+            
+        </div>
+    )
+}
 
 const AppLayout = () => {
     return(
         <div className="app">
           <Header/>
-        {/* <Body/> */}
+        <Body/>
         </div>
     )
 }
