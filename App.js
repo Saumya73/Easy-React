@@ -40,13 +40,19 @@ const Header = () => {
 };
 
 const stylecard = {
-    backgroundColor: "yellow"
+    backgroundColor: "#D3D3D3"
 }
 
 const RestaurantCard = () => {
     return(
       <div className='restro-card' style={stylecard}>
-         <h3>Restro Name</h3>
+      <div>
+        <img className='restro-logo' src='https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/dpqcjrxwruipnt1wyqnh' />
+      </div>
+         <h3>YO China</h3>
+         <h4>Chinese,Goa,Asia</h4>
+         <h4>4.4 stars</h4>
+         <h4>25min</h4>
       </div>
     )
 }
@@ -57,6 +63,19 @@ const Body = () => {
         <div className='search'>Search</div>
         <div className='restro-container'>
          {/* //RestaurantCard */}
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
+         <RestaurantCard/>
          <RestaurantCard/>
         </div>
             

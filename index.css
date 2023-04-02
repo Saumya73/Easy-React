@@ -17,11 +17,26 @@
 .nav-links li{
     margin: 10px;   
 }
+.restro-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 .restro-card{
     width: 200px;
-    height: 300px;
+    height: 300px; 
+    padding: 5px;
+    margin: 5px;
+}
+.restro-card:hover{
     border: 1px solid black;
+    cursor: pointer;
 }
 .search{
     padding: 10px 0px;
+}
+.restro-logo{
+    width: 190px;
+    height: 120px;
+    padding: 5px;
 }
