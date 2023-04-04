@@ -43,16 +43,16 @@ const stylecard = {
     backgroundColor: "#D3D3D3"
 }
 
-const RestaurantCard = (props) => {
+const RestaurantCard = ({resName,cuisine,rating}) => {                              // Destructure 
     console.log(props);
     return(
       <div className='restro-card' style={stylecard}>
       <div>
         <img className='restro-logo' src='https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/dpqcjrxwruipnt1wyqnh' />
       </div>
-         <h3>{props.resName}</h3>
-         <h4>{props.cuisine}</h4>
-         <h4>{props.rating}</h4>
+         <h3>{resName}</h3>
+         <h4>{cuisine}</h4>
+         <h4>{rating}</h4>
          <h4>25min</h4>
       </div>
     )
