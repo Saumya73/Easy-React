@@ -43,15 +43,16 @@ const stylecard = {
     backgroundColor: "#D3D3D3"
 }
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+    console.log(props);
     return(
       <div className='restro-card' style={stylecard}>
       <div>
         <img className='restro-logo' src='https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/dpqcjrxwruipnt1wyqnh' />
       </div>
-         <h3>YO China</h3>
-         <h4>Chinese,Goa,Asia</h4>
-         <h4>4.4 stars</h4>
+         <h3>{props.resName}</h3>
+         <h4>{props.cuisine}</h4>
+         <h4>{props.rating}</h4>
          <h4>25min</h4>
       </div>
     )
@@ -63,20 +64,9 @@ const Body = () => {
         <div className='search'>Search</div>
         <div className='restro-container'>
          {/* //RestaurantCard */}
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
-         <RestaurantCard/>
+         <RestaurantCard resName="YO China" cuisine="Chinese,Goa,Asia" rating="4.4"/>
+         <RestaurantCard resName="KFC" cuisine="Burger,Goa,Asia" rating="4.3" />
+      
         </div>
             
         </div>
