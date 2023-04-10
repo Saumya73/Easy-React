@@ -2155,17 +2155,18 @@ const restroObjList = [
 const RestaurantCard = (props) => {     
   
   const {restroData} = props;
-    console.log(props);
+    // console.log(props);
+    const {name, cuisines, avgRating, deliveryTime, costForTwo} = restroData?.data          //  optional chaining
     return(
       <div className='restro-card' style={stylecard}>
       <div>
         <img className='restro-logo' src={'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/'+restroData.data.cloudinaryImageId} />
       </div>
-         <h3>{restroData.data.name}</h3>
-         <h4>{restroData.data.cuisines.join(", ")}</h4>
-         <h4>{restroData.data.avgRating}stars</h4>
-         <h4>{restroData.data.deliveryTime}min</h4>
-         <h4>Rs.{restroData.data.costForTwo/100} for two</h4>
+         <h3>{name}</h3>
+         <h4>{cuisines.join(", ")}</h4>
+         <h4>{avgRating}stars</h4>
+         <h4>{deliveryTime}min</h4>
+         <h4>Rs.{costForTwo/100} for two</h4>
         
       </div>
     )
