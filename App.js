@@ -2180,7 +2180,7 @@ const Body = () => {
         
         {
           restroObjList.map((restaurant) =>(
-          <RestaurantCard restroData={restaurant}/>
+          <RestaurantCard key={restaurant.data.id} restroData={restaurant}/>
           ))
         }
       
