@@ -2177,25 +2177,12 @@ const Body = () => {
         <div className='body'>
         <div className='search'>Search</div>
         <div className='restro-container'>
-         {/* //RestaurantCard */}
-         <RestaurantCard restroData={restroObjList[0]}/>
-         <RestaurantCard restroData={restroObjList[1]}/>
-         <RestaurantCard restroData={restroObjList[2]}/>
-         <RestaurantCard restroData={restroObjList[3]}/>
-         <RestaurantCard restroData={restroObjList[4]}/>
-         <RestaurantCard restroData={restroObjList[5]}/>
-         <RestaurantCard restroData={restroObjList[6]}/>
-         <RestaurantCard restroData={restroObjList[7]}/>
-         <RestaurantCard restroData={restroObjList[8]}/>
-         <RestaurantCard restroData={restroObjList[9]}/>
-         <RestaurantCard restroData={restroObjList[10]}/>
-         <RestaurantCard restroData={restroObjList[11]}/>
-         <RestaurantCard restroData={restroObjList[12]}/>
-         <RestaurantCard restroData={restroObjList[13]}/>
-         <RestaurantCard restroData={restroObjList[14]}/>
-       
-       
         
+        {
+          restroObjList.map((restaurant) =>(
+          <RestaurantCard restroData={restaurant}/>
+          ))
+        }
       
         </div>
             
