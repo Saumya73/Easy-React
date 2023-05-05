@@ -2,10 +2,9 @@
   "name": "easyreact",
   "version": "1.0.0",
   "description": "Learning React",
-  
   "scripts": {
-    "test": "jest" ,
-    "start": "parcel index.html" ,
+    "test": "jest",
+    "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "repository": {
@@ -28,10 +27,11 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1"
   },
-  "browsersList" : [
-    "last 2 Chrome version" ,
-     "last 2 Firefox version"
+  "browsersList": [
+    "last 2 Chrome version",
+    "last 2 Firefox version"
   ]
 }

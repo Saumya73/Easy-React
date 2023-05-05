@@ -6,6 +6,8 @@
 
 .logo img{
     width: 100px;
+    height: 80px;
+    margin: 10px;
 }
 
 .nav-links ul{
@@ -42,4 +44,11 @@
 }
 .top-rated-btn{
     margin: 10px;
+}
+
+.shimmer-ui{
+    width: 200px;
+    height: 200px;
+    background: lightgrey;
+    margin: 20px;
 }

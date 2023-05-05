@@ -10,8 +10,6 @@ function filterData(searchText, listofRestro) {
         return filterData;    
 }
 
-
-
 const Body = () => {
     
   const [alllistofRestro, setalllistofRestro] = useState([]);
@@ -27,12 +25,12 @@ const Body = () => {
   async function getRestaurants(){
     const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=15.5084466&lng=73.8389657&page_type=DESKTOP_WEB_LISTING");
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
    setalllistofRestro(json?.data?.cards[2]?.data?.data?.cards);
    setfilterlistofRestro(json?.data?.cards[2]?.data?.data?.cards);
   }
 
-  console.log("render");
+ // console.log("render");
 
 
 
@@ -40,8 +38,8 @@ const Body = () => {
 if(!alllistofRestro) return null;
 
 
-if(filterlistofRestro?.length === 0)
-  return <h1>No restaurant of your choice found!!</h1>
+// if(filterlistofRestro?.length === 0)
+//   return <h1>No restaurant of your choice found!!</h1>
 
 // conditional Rendering
 //  if restaurant is empty - shimmer ui

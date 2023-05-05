@@ -1,5 +1,7 @@
 import { LOGO_URL } from "./utils/constants";
 import { useState } from "react";
+import logo from "../assets/images/food_villa_logo.jpg";
+import {Link} from "react-router-dom";
 
 const Header = () => {
 
@@ -9,13 +11,14 @@ const Header = () => {
     return(
      <div className='header'>
       <div className='logo'>
-        <img src={LOGO_URL}/>
+        <img src={logo}/>
       </div>
 
       <div className='nav-links'>
       <ul>
-      <li>Home</li>
-        <li>About</li>
+      <Link to="/"> <li>Home</li> </Link>
+      <Link to="/about"> <li>About</li> </Link>
+        
         <li>Contact Us</li>
         <li>Cart</li>
       </ul>
